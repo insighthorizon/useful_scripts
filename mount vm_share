@@ -1,0 +1,1 @@
+sudo mount -t vboxsf vm_share /media/sf_vm_share
