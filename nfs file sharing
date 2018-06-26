@@ -1,0 +1,23 @@
+#-------- ON SERVER:
+mkdir nfs
+cd nfs
+mkdir Demo
+ifconfig 10.0.0.10
+ifconfig
+
+sudo gedit /etc/exports
+#add this line to end of file: /home/user/nfs *(rw,sync,no_root_squash,no_subtree_check)
+
+sudo service nfs-kernel-server reload
+showmount -e
+
+#------- ON CLIENT:
+cd /home/root/
+mkdor demo_nfs
+ifconfig eth0 10.0.0.20
+ifconfig
+ping 10.0.0.10
+
+mount -t nfs 10.0.0.20:/home/user/nfs /home/root/demo_nfs
+#done
+
