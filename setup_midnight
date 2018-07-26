@@ -1,0 +1,12 @@
+1. create file /usr/local/bin/emacs-nw.sh with content:
+#!/bin/sh
+gnome-terminal -e "emacs -nw "$@""
+
+2. sudo chmod +x usr/local/bin/emacs-nw.sh
+
+3. 
+sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/emacs-nw.sh 2
+
+3. in mc: configuration - internal editor -off
+
+4. with running mc interminal: select-editor
