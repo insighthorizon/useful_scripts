@@ -1,0 +1,7 @@
+when compiling, create gdb symbols in executable: g++ -g main.cpp (the -g option)
+run gdb: gdb ./a.out
+set breakpoint: break filename:linenumber (break main.cpp:41)
+start debugging: run
+show local variables with their values: info locals
+step through lines of code: step
+continue running to next breakpoint or end of program: continue
