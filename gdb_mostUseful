@@ -5,3 +5,5 @@ start debugging: run
 show local variables with their values: info locals
 step through lines of code: step
 continue running to next breakpoint or end of program: continue
+show breakpoints: info break
+delete breakpoint: del 1 (1 is index of breakpoint)
