@@ -28,3 +28,6 @@ ctrl - c
 #display background processes
 jobs
 
+#search
+find ./ -type f -name "*.log"
+
