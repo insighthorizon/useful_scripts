@@ -1,3 +1,7 @@
 git reset --soft HEAD^
 
 git push -f origin HEAD^:master
+
+
+#Git revert local commit
+git reset --hard remotes/origin/HEAD
