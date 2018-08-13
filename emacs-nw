@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#this script file can be set as defaul text editor in the linux
+emacs -nw "$@"
