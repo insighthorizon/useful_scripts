@@ -1,3 +1,4 @@
+
 #Open emacs in new terminal window
 gnome-terminal -e "emacs -nw main.cpp"
 x-terminal-emulator -e "emacs -nw"
@@ -31,3 +32,8 @@ jobs
 #search
 find ./ -type f -name "*.log"
 
+# Squash git commits into one TROLOLO
+git rebase -i HEAD~4 #in this case squish 4 of them
+#chose one with pick and rest with squash
+#chose new commit message
+git push --force origin master
