@@ -39,3 +39,12 @@ git rebase -i HEAD~4 #in this case squish 4 of them
 #chose one with pick and rest with squash
 #chose new commit message
 git push --force origin master
+
+# Some regular expression's gymnastics
+grep -Ea '^\s+[1-9][0-9]+' testdata.txt
+grep -Ea '\s+[1-9][0-9]+\s*$' testdata.txt
+sed 's/\^T//g' testdata.txt
+
+sudo apt-get install poppler-utils
+pdftotext Basket.pdf out.txt
+
