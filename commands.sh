@@ -26,6 +26,8 @@ bg
 # to kill the process:
 fg
 ctrl - c
+#or:
+kill %n # n is process number outputed by bg command
 #display background processes
 jobs
 
