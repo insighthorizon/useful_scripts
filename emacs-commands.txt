@@ -1,6 +1,0 @@
-# terminal emulator - opens buffer with fully functional shell
-M-x ansi-term
-# kill buffer
-C-x, k
-# switch buffer
-C-x, (right/left arrow)
