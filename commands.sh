@@ -46,5 +46,7 @@ grep -Ea '\s+[1-9][0-9]+\s*$' testdata.txt
 sed 's/\^T//g' testdata.txt
 
 sudo apt-get install poppler-utils
-pdftotext Basket.pdf out.txt
+pdftotext input.pdf input.txt
 
+sed -E '/^\s*[1-9][0-9]+\s*$/d' imput.txt > result.txt
+cat -s result.txt
