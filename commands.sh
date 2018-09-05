@@ -50,3 +50,8 @@ pdftotext input.pdf input.txt
 
 sed -E '/^\s*[1-9][0-9]+\s*$/d' imput.txt > result.txt
 cat -s result.txt
+
+#call previous command
+!!
+sudo !! #sudo it
+
