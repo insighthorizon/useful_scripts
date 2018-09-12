@@ -1,0 +1,21 @@
+Ctrl+a	Move cursor to the beginning of the command line.
+Ctrl+e	Move cursor to the end of the command line.
+Ctrl+f 	Move cursor one character forward
+Ctrl+b	Move cursor one character back
+Shift+PageUp and Shift+PageDown	Browse terminal buffer (to see text that has "scrolled off" the screen).
+ArrowLeft and ArrowRight	Move the cursor one place to the left or right on the command line, so that you can insert characters at other places than just at the beginning and the end.
+
+Ctrl+k	Kill to the end of line
+Ctrl+u 	Kill ti the start of line (in emacs its 'M-0 C-k')
+Ctrl+y	Yank killed text back
+
+Ctrl+c	End a running program and return the prompt, see Chapter 4, Processes.
+Ctrl+d	Log out of the current shell session, equal to typing exit or logout.
+Ctrl+h	Generate backspace character.
+Ctrl+l	Clear this terminal.
+Ctrl+z	Suspend a program, see Chapter 4, Processes.
+
+Ctrl+r	Search command history, see the section called “The grep command”.
+ArrowUp and ArrowDown	Browse history. Go to the line that you want to repeat, edit details if necessary, and press Enter to save time.
+Tab	Command or filename completion; when multiple choices are possible, the system will either signal with an audio or visual bell, or, if too many choices are possible, ask you if you want to see them all.
+Tab Tab	Shows file or command completion possibilities.
