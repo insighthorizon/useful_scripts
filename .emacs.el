@@ -3,6 +3,7 @@
 (load-file "~/.emacs.d/themes/heroku-theme.el")
 (load-theme 'heroku t)
 (global-linum-mode 1)
+(set-default 'truncate-lines t)
 ;; enable latex preview pan
 (load "preview-latex.el" nil t t)
 
