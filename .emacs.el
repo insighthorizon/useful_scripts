@@ -4,9 +4,6 @@
 (load-theme 'heroku t)
 (global-linum-mode 1)
 (set-default 'truncate-lines t)
-;; enable latex preview pan
-(load "preview-latex.el" nil t t)
-
 
 (require 'package)
 (setq package-archives
@@ -24,8 +21,6 @@
 
 ;; appearance of org mode bullets (no ******)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-;; displaying proportional fonts with variable-pitch mode
-(add-hook 'org-mode-hook 'variable-pitch-mode)
 ;; paragraphs (long line mode)
 (add-hook 'org-mode-hook 'visual-line-mode)
 
@@ -47,4 +42,5 @@
  '(org-level-4 ((t (:foreground "#e0cf9f" :height 1.1))))
  '(org-level-5 ((t (:foreground "#93e0e3" :height 1.05))))
  '(term-color-blue ((t (:background "deep sky blue" :foreground "cyan"))))
- '(term-color-red ((t (:background "salmon" :foreground "light coral")))))
+ '(term-color-red ((t (:background "salmon" :foreground "light coral"))))
+ )
