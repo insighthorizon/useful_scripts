@@ -17,7 +17,7 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
  ;;org mode latex preview size - must have dvipng or equivalent installed (apt-get install dvipng) and org updated
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.35))
 
 ;; appearance of org mode bullets (no ******)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
