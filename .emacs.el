@@ -4,6 +4,8 @@
 (load-theme 'heroku t)
 (global-linum-mode 1)
 (set-default 'truncate-lines t)
+;; C indentation
+(setq c-default-style "linux" c-basic-offset 4)
 
 (require 'package)
 (setq package-archives
