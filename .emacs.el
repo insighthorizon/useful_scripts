@@ -18,15 +18,15 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
- ;;org mode latex preview size - must have dvipng or equivalent installed (apt-get install dvipng) and org updated
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.35))
+(setq org-latex-create-formula-image-program 'imagemagick)
+;;org mode latex preview size - must have dvipng or equivalent installed (apt-get install dvipng) and org updated
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.4))
+
 
 ;; appearance of org mode bullets (no ******)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;; paragraphs (long line mode)
 (add-hook 'org-mode-hook 'visual-line-mode)
-;; proportional font
-(add-hook 'org-mode-hook 'variable-pitch-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -47,7 +47,4 @@
  '(org-level-5 ((t (:foreground "#93e0e3" :height 1.05))))
  '(term-color-blue ((t (:background "deep sky blue" :foreground "cyan"))))
  '(term-color-red ((t (:background "salmon" :foreground "light coral"))))
- ;; fixed font pitch for the blocks
- '(org-block                 ((t (:inherit fixed-pitch))))
  )
-
