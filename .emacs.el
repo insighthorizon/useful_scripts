@@ -2,8 +2,8 @@
 (tool-bar-mode -1)
 (load-file "~/.emacs.d/themes/heroku-theme.el")
 (load-theme 'heroku t)
-(global-linum-mode 1)
-(set-default 'truncate-lines t)
+;;(global-linum-mode 1)
+;;(set-default 'truncate-lines t)
 ;; C indentation
 (setq c-default-style "linux" c-basic-offset 4)
 
