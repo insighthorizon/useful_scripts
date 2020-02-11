@@ -17,7 +17,7 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 ;;render latex fragment preview with imagemagick (you have to install it, otherwise cannot render latex diagrams)
-;;(setq org-latex-create-formula-image-program 'imagemagick)
+(setq org-latex-create-formula-image-program 'imagemagick)
 ;;org mode latex preview size - must have dvipng or equivalent installed (apt-get install dvipng) and org updated
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.42))
 
@@ -44,4 +44,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-block ((t (:inherit fixed-pitch)))))
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((latex . t)))
+
 
