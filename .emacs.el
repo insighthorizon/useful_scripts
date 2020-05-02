@@ -12,14 +12,19 @@
         ("org" . "http://orgmode.org/elpa/")) )
 (package-initialize)
 
+(require 'ox-latex)
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+
+
 ;;render latex fragment preview with imagemagick (you have to install it, otherwise cannot render latex diagrams)
 (setq org-latex-create-formula-image-program 'imagemagick)
 ;;org mode latex preview size - must have dvipng or equivalent installed (apt-get install dvipng) and org updated
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.42))
+;; let me use underscore
+(setq org-use-sub-superscripts '{})
 
 ;; appearance of org mode bullets (no ******)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
@@ -33,11 +38,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-hide-emphasis-markers t)
  '(custom-enabled-themes (quote (eziam-light)))
  '(custom-safe-themes
    (quote
-    ("e11880d349e5b3f3d47e5bd6f7d9ff773ab6301e124ec7dbbbfbba5fb8482390" default))))
+    ("e11880d349e5b3f3d47e5bd6f7d9ff773ab6301e124ec7dbbbfbba5fb8482390" default)))
+ '(org-hide-emphasis-markers t)
+ '(package-selected-packages
+   (quote
+    (latex-math-preview org haskell-mode racket-mode org-bullets eziam-theme))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
