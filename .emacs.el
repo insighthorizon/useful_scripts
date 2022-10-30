@@ -20,7 +20,7 @@
 
 
 ;;render latex fragment preview with imagemagick (you have to install it, otherwise cannot render latex diagrams)
-(setq org-latex-create-formula-image-program 'imagemagick)
+;(setq org-latex-create-formula-image-program 'imagemagick)
 ;;org mode latex preview size - must have dvipng or equivalent installed (apt-get install dvipng) and org updated
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.42))
 ;; let me use underscore
@@ -38,14 +38,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (eziam-light)))
+ '(custom-enabled-themes '(eziam-light))
  '(custom-safe-themes
-   (quote
-    ("e11880d349e5b3f3d47e5bd6f7d9ff773ab6301e124ec7dbbbfbba5fb8482390" default)))
+   '("e11880d349e5b3f3d47e5bd6f7d9ff773ab6301e124ec7dbbbfbba5fb8482390" default))
  '(org-hide-emphasis-markers t)
  '(package-selected-packages
-   (quote
-    (latex-math-preview org haskell-mode racket-mode org-bullets eziam-theme))))
+   '(lua-mode latex-math-preview org haskell-mode racket-mode org-bullets eziam-theme)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -59,3 +57,17 @@
  '((latex . t)))
 
 
+(put 'dired-find-alternate-file 'disabled nil)
+
+
+(defun set-exec-path-from-shell-PATH ()
+  "Set up Emacs' `exec-path' and PATH environment variable to match that used by the user's shell.
+
+This is particularly useful under Mac OSX, where GUI apps are not started from a shell."
+  (interactive)
+  (let ((path-from-shell (replace-regexp-in-string "[ \t\n]*$" "" (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+
+(set-exec-path-from-shell-PATH)
+;(setq exec-path (append exec-path '("/usr/racket/bin")))
