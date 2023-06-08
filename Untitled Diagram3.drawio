@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-08T12:31:18.439Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="jhi9B--Xv83ACSMHKjj3" version="21.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-08T13:10:46.931Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="A047HRU5OCF9wCRAE2wq" version="21.3.7" type="github">
   <diagram id="2lVPvYAt5jR7z7e0g14L" name="Page-1">
     <mxGraphModel dx="1674" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -13,12 +13,18 @@
         <mxCell id="ocq4hiyoIey7MnQaaA4S-6" value="Fail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="atLUrV1GHqGAp-eZwnpk-2" target="ocq4hiyoIey7MnQaaA4S-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-pdSPGXBJxqIsgxPXY8Z-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="atLUrV1GHqGAp-eZwnpk-2" target="_qDpWo0x83BWtvbT7pPs-2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="-pdSPGXBJxqIsgxPXY8Z-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="atLUrV1GHqGAp-eZwnpk-2" target="_qDpWo0x83BWtvbT7pPs-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="320" />
+              <mxPoint x="270" y="320" />
+              <mxPoint x="270" y="478" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="-pdSPGXBJxqIsgxPXY8Z-21" value="ok" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-pdSPGXBJxqIsgxPXY8Z-20">
           <mxGeometry x="-0.5329" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="46" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="atLUrV1GHqGAp-eZwnpk-2" value="Check CRC of the Flash Content" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
